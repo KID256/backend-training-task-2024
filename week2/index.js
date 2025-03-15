@@ -33,9 +33,7 @@ console.log(i + j === 99);    // false
 var k = 3;
 var l = '8';
 // 請文字解釋為什麼
-console.log(k * l > 21);      // true
-
-// 字串 '8' 會轉換為數字 8，所以 3 * 8 > 21 得 true
+console.log(k * l > 21);      // 字串 '8' 會轉換為數字 8，所以 3 * 8 > 21 得 true
 
 // ### 題目三：邏輯運算子 + if, else
 // 情境：健身房週年慶，買課程送贈品
