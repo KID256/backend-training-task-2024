@@ -94,7 +94,7 @@ const groupClassesTotal = groupClassPrice * 2;
 totalBill = machineUsePriceTotal + groupClassesTotal;
 
 console.log(
-  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${total}元`
+  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${totalBill}元`
 );
 
 // ### 題目八：變數重新賦予值
