@@ -132,7 +132,7 @@ if (playerA === playerB) {
 
 const gymCoach = {}; // 練習：使用物件變數定義兩位教練的資訊
 
-gymCoach = {
+Object.assign(gymCoach, {
   gym: "Kaohsiung Fitness Trainer Alliance",
   wang: {
     skills: ["strength training", "weight loss"],
@@ -168,7 +168,7 @@ gymCoach = {
     bio: "Yoga master with 10 years of teaching experience. Skilled at helping clients improve posture and flexibility.",
     newStudents: false
   }
-};
+});
 
 console.log(gymCoach);
 
@@ -221,7 +221,7 @@ console.log(performanceData);
 */
 const activities = {}; // 練習：使用 `物件包含物件` 的格式定義運動類型與每分鐘消耗卡路里
 
-activities = {
+Object.assign(activities, {
   treadmill: {
     caloriesPerMinute: 10
   },
@@ -231,7 +231,7 @@ activities = {
   cycling: {
     caloriesPerMinute: 8
   }
-};
+});
 
 // ## 題目九
 // 情境：算小明今天的卡路里消耗
@@ -274,7 +274,7 @@ const exerciseRecords = [
 
 // 範例：週一
 if (exerciseRecords[0].duration >= 30 && exerciseRecords[0].heartRate >= 130) {
-  totalDuration += mondayDuration;
+  totalDuration += exerciseRecords[0].duration;
   validDays += 1;
 }
 
